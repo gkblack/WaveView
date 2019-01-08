@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <declare-styleable name="wave">
+        <!--波浪颜色-->
+        <attr name="color" format="color"/>
+        <attr name="fill_mode">
+            <!--填充顶部，达到顶部为直线，底部为波浪线-->
+            <enum name="top" value="1"/>
+            <!--填充底部，设置底部为直线，顶部波浪线-->
+            <enum name="bottom" value="2"/>
+        </attr>
+        <!--波浪变化速率，值小于0时向右波浪，大于0时波浪向左滑动-->
+        <attr name="speed" format="integer"/>
+        <!--水波浪初始状态的相位角-->
+        <attr name="phi" format="integer"/>
+        <!--波浪角频率，默认值为1，显示为一个三角函数周期-->
+        <attr name="omega" format="float"/>
+    </declare-styleable>
+</resources>
